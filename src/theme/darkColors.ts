@@ -11,6 +11,7 @@ const darkColors = {
   info: '#1C3AA7',
   white: '#FFFFFF',
   text: '#FFFFFF',
+  lightGray: 'rgba(246, 246, 246, 1)',
 };
 
 export const darkLinear = ['rgba(22, 29, 29, 0.7)', 'rgba(22, 29, 29, 0.22)'];

@@ -5,7 +5,8 @@ import {
   View,
   Text,
 } from 'react-native';
-import styles from './styles';
+import makeStyle from './styles';
+import {useTheme} from 'react-native-paper';
 
 interface Props extends TextInputProps {
   label?: string;
@@ -19,9 +20,11 @@ const TextInput: React.FC<Props> = ({
   onFocus,
   ...rest
 }) => {
+  const theme = useTheme();
+  const styles = makeStyle(theme);
+
   return (
     <View style={styles.container}>
-      {label && <Text style={styles.label}>{label}</Text>}
       <RNTextInput style={styles.input} onFocus={onFocus} {...rest} />
       {errorMessage && <Text style={styles.error}>{errorMessage}</Text>}
     </View>

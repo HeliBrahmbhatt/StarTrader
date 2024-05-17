@@ -11,6 +11,8 @@ const lightColors = {
   info: '#1C3AA7',
   white: '#FFFFFF',
   text: '#161D1D',
+  lightGray: 'rgba(246, 246, 246, 1)',
+  borderLightGray: 'rgba(232, 232, 232, 1)',
 };
 
 export const lightLinear = [
