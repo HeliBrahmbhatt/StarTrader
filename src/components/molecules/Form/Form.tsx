@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {View, Button} from 'react-native';
+import {View} from 'react-native';
 import TextInput from '../../atoms/TextInput/TextInput';
+import Button from '../../atoms/Button/Button';
 import styles from './styles';
 
 const Form: React.FC = () => {
